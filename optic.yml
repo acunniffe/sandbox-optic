@@ -27,3 +27,7 @@ capture:
           method: GET
         - path: /orgs/facebook/repos
           method: GET
+        - path: /repos/facebook/hhvm
+          method: GET
+        - path: /repos/facebook/fbthrift
+          method: GET
