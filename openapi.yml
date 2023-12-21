@@ -866,16 +866,10 @@ components:
                 type: boolean
               push:
                 type: boolean
-              triage:
-                type: boolean
-              pull:
-                type: boolean
             required:
               - admin
               - maintain
               - push
-              - triage
-              - pull
         required:
           - id
           - node_id
