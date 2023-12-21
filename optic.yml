@@ -3,6 +3,12 @@ ruleset:
       required_on: always
       properties: snake_case
       queryParameters: snake_case
+  - "breaking-changes"
+  - lintgpt: 
+      v3_standards:
+        rules: 
+         - "GET Requests that have an ID at the end of their path (ie /teams/{teamID}) SHOULD have a 404 response defined."
+         - "properties that sounds like they are dates should use format: datetime or format: timestamp"
 capture:
   openapi.yml:
     server:
