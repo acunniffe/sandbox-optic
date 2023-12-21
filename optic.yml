@@ -1,4 +1,8 @@
-rulesets: []
+ruleset:
+  - naming:
+      required_on: always
+      properties: snake_case
+      queryParameters: snake_case
 capture:
   openapi.yml:
     server:
