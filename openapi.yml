@@ -405,16 +405,6 @@ components:
             type: array
             items:
               {}
-          visibility:
-            type: string
-          forks:
-            type: number
-          open_issues:
-            type: number
-          watchers:
-            type: number
-          default_branch:
-            type: string
         required:
           - id
           - node_id
@@ -490,11 +480,6 @@ components:
           - is_template
           - web_commit_signoff_required
           - topics
-          - visibility
-          - forks
-          - open_issues
-          - watchers
-          - default_branch
     GetUsersUser200ResponseBody:
       type: object
       properties:
@@ -547,9 +532,13 @@ components:
             - string
             - "null"
         email:
-          type: "null"
+          type: 
+            - string
+            - "null"
         hireable:
-          type: "null"
+          type:
+            - boolean
+            - "null"
         bio:
           oneOf:
             - type: "null"
