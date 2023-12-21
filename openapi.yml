@@ -231,10 +231,6 @@ components:
                 type: string
               received_events_url:
                 type: string
-              type:
-                type: string
-              site_admin:
-                type: boolean
             required:
               - login
               - id
@@ -252,8 +248,6 @@ components:
               - repos_url
               - events_url
               - received_events_url
-              - type
-              - site_admin
           html_url:
             type: string
           description:
