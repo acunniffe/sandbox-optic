@@ -1,5 +1,5 @@
 info:
-  title: Untitled service
+  title: GitHub API from traffic
   version: 1.0.0
 openapi: 3.1.0
 paths:
