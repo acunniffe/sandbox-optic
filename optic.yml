@@ -1,8 +1,5 @@
 capture:
   openapi.yml:
-    # 🔧 Runnable example with simple get requests. 
-    # Run with "optic capture openapi.yml --update interactive" 
-    # You can change the server and the 'requests' section to experiment
     server:
       url: https://api.github.com
     requests:
