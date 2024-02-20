@@ -266,12 +266,14 @@ components:
           svn_url:
             type: string
           homepage:
-            oneOf: 
-              - type: string
+            allOf: 
               - type: object
+                required: ["internal"]
                 properties: 
                   internal: 
                     type: string
+              - type: object
+                properties: 
                   external: 
                     type: string   
           size:
