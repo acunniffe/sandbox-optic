@@ -8,6 +8,7 @@ paths:
       - in: path
         name: user
         required: true
+        example: "ITS FUN"
         schema:
           type: string
     get:
@@ -59,6 +60,7 @@ components:
             type: string
           gravatar_id:
             type: string
+            example: "ITS FUN"
           url:
             type: string
           html_url:
