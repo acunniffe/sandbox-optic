@@ -70,11 +70,12 @@ paths:
         - name: petId
           in: path
           required: true
+          example: "PET LOVE"
           description: The id of the pet to retrieve
           schema:
             type: string
       responses:
-        '200':
+        '204':
           description: Expected response to a valid request
           content:
             application/json:
@@ -98,14 +99,15 @@ components:
           type: integer
           format: int64
         name:
-          type: string
-          nullable: true
+          allOf:
+            - type: object
+            - type: object
         tag:
           type: string
-          enum: ["Puppy", "Senior", "Housetrained"]
+          enum: [ "Senior", "Housetrained", "Puppy"]
     Pets:
       type: array
-      maxItems: 100
+      maxItems: 220
       items:
         $ref: "#/components/schemas/Pet"
     Error:
