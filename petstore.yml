@@ -99,6 +99,7 @@ components:
           format: int64
         name:
           type: string
+          nullable: true
         tag:
           type: string
     Pets:
