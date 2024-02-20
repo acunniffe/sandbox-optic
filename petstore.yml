@@ -102,6 +102,7 @@ components:
           nullable: true
         tag:
           type: string
+          enum: ["Puppy", "Senior", "Housetrained"]
     Pets:
       type: array
       maxItems: 100
