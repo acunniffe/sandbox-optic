@@ -258,7 +258,7 @@ components:
           pushed_at:
             type: string
           git_url:
-            type: string
+            type: ["number", "null"]
           ssh_url:
             type: string
           clone_url:
@@ -275,7 +275,8 @@ components:
               - type: object
                 properties: 
                   external: 
-                    type: string   
+                    type: string  
+                    enum: ["A", "B", ] 
           size:
             type: number
           stargazers_count:
